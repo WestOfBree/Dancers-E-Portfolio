@@ -29,9 +29,13 @@ GENERAL STYLES
 html {
   scroll-behavior: smooth;
 }
+.container {
+  padding: 50px 0;
+  width: 100%;
+}
 .row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
  
 }
@@ -82,7 +86,6 @@ NAV STYLES
 }
 .nav__row {
   margin-top: 42px;
-  max-height: 100vh;
 }
 .nav__links {
   display: flex;
@@ -93,13 +96,17 @@ NAV STYLES
   max-height: 100vh;
   overflow: hidden;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 .dancer__img {
-  max-height: calc(100vh - 10vh);
-  max-width: 100%;
-  margin: 32 0;
-  padding: 12px 262px;
+  padding: 0 42px;
   border-radius: 50% 50% 0 0;
+  max-height: 650px;
+  max-width: 900px;
+ 
 }
 
 /*
@@ -113,10 +120,11 @@ ABOUT STYLES
 .about__container {
   display: flex;
   position: relative;
-  z-index: 5;
+ 
 }
 .background {
-
+  top: 0px;
+  right: 2px;
   position: absolute;
   border: solid 1px white;
   background-color: white;
@@ -125,6 +133,7 @@ ABOUT STYLES
   opacity: 0.8;
   z-index: -1;
   border-radius: 50px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
 }
 
 .dancer__about--img-wrapper {
@@ -140,11 +149,13 @@ ABOUT STYLES
   flex-direction: column;
   text-align: center;
   justify-content: center;
+   z-index: 5;
 }
 
 .dancer__about--img-wrapper {
   border-radius: 20% 20%;
   overflow: hidden;
+   z-index: 5;
 }
 .dancer-about__img {
   width: 100%;
@@ -183,79 +194,15 @@ PERFORMANCE STYLES
     margin-bottom: 12px;
 }
 .performance__desc{
-    width: 100%;
-    text-align: center; 
-    margin: 24px 0;
+    width: 40%;
 }
-.performance__desc--title,
-.performance__desc--sub-title{
-  margin-bottom: 8px;
-}
-.performance-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.performance-wrapper{ 
+display: flex;
   justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
-.performance{
-  margin-top: 24px;
-}
-
-
-/*
-
-SPARKLE STYLES
-
-*/
-
-.sparkle{
-  position: fixed;
-  max-height: 40px;
-  max-width: 45px;
-  z-index: -1;
-  filter: invert();
-}
-.rotate-1{
-  transform: rotate(-40deg) scaleX(-1);
-}
-.sparkle--0{
-  top: 10vh;
-  left: 30vw;
-}
-
-.sparkle--1{
-  top: 35vh;
-  left: 16vw;
-}
-.sparkle--2{
-  top: 65vh;
-  left: 80vw;
-}
-.sparkle--3{
-  top: 90vh;
-  left: 89vw;
-}
-.sparkle--4{
-  top:15vh;
-  left: 90vw;
-}
-.sparkle--5{
-  top: 22vh;
-  left: 70vw;
-}
-.sparkle--6{
-  top: 80vh;
-  left: 10vw;
-}
-.sparkle--7{
-  top: 5vh;
-  left: 5vw;
-}
-.sparkle--8{
-  top: 10vh;
-  left: 85vw;
-}
-
 /*
 
 FOOTER STYLES
